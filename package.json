@@ -1,0 +1,54 @@
+{
+  "name": "@rais/react-native",
+  "version": "1.0.0",
+  "description": "The Raïs payment page inside your React Native and Expo app: light and dark mode, an appearance you can customize, and a keyboard that never makes the page jump.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "src",
+    "ios",
+    "android",
+    "expo-module.config.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsc -p tsconfig.test.json && node --test \"build-test/**/*.test.js\"",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "rais",
+    "payments",
+    "checkout",
+    "react-native",
+    "expo",
+    "algeria",
+    "cib",
+    "edahabia"
+  ],
+  "homepage": "https://rais.app/sdk/react-native",
+  "license": "MIT",
+  "peerDependencies": {
+    "expo": ">=50.0.0",
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.2.0",
+    "expo-modules-core": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rais-App/rais-react-native.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rais-App/rais-react-native/issues"
+  }
+}
