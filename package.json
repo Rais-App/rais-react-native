@@ -1,5 +1,5 @@
 {
-  "name": "@rais/react-native",
+  "name": "@rais-app/react-native",
   "version": "1.0.0",
   "description": "The Raïs payment page inside your React Native and Expo app: light and dark mode, an appearance you can customize, and a keyboard that never makes the page jump.",
   "main": "build/index.js",

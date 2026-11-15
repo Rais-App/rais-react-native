@@ -36,7 +36,7 @@ export async function presentRaisCheckout(options: RaisCheckoutOptions): Promise
       error: {
         code: "notLinked",
         message:
-          "The Raïs native module is not part of this build. It does not run in Expo Go: make a development build (npx expo run:ios / run:android, or EAS Build) after installing @rais/react-native.",
+          "The Raïs native module is not part of this build. It does not run in Expo Go: make a development build (npx expo run:ios / run:android, or EAS Build) after installing @rais-app/react-native.",
       },
     };
   }

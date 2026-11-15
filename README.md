@@ -15,15 +15,15 @@ Your **server** creates the payment (`POST /payments` with your secret key) and 
 ## Install
 
 ```sh
-npx expo install @rais/react-native
+npx expo install @rais-app/react-native
 ```
 
-or `npm install @rais/react-native` in a bare app that has [Expo modules installed](https://docs.expo.dev/bare/installing-expo-modules/). The SDK has native code: **it does not run in Expo Go**. Make a development build (`npx expo run:ios`, `npx expo run:android`, or EAS Build) after installing it. Without the native module `presentRaisCheckout` resolves with `{ status: "failed", error: { code: "notLinked" } }` instead of crashing.
+or `npm install @rais-app/react-native` in a bare app that has [Expo modules installed](https://docs.expo.dev/bare/installing-expo-modules/). The SDK has native code: **it does not run in Expo Go**. Make a development build (`npx expo run:ios`, `npx expo run:android`, or EAS Build) after installing it. Without the native module `presentRaisCheckout` resolves with `{ status: "failed", error: { code: "notLinked" } }` instead of crashing.
 
 ## Show the checkout
 
 ```tsx
-import { presentRaisCheckout } from "@rais/react-native";
+import { presentRaisCheckout } from "@rais-app/react-native";
 
 async function pay() {
   const { checkoutUrl } = await myServer.startPayment(cartId);   // your server created the payment
